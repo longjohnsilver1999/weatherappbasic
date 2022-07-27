@@ -7,7 +7,7 @@ body {
  
     font-family: 'Open Sans', sans-serif;
     background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?rain');
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
     font-size: 120%;
 }
 
@@ -35,7 +35,7 @@ button{
     border-radius: 50%;
     border:none;
     height:44px;
-    width: 46px;
+    width: 44px;
     outline: none;
     background: #7c7c7c2b;
     color: white;
@@ -57,4 +57,29 @@ input.search-bar{
 
 h1.temp{
     margin: 0;
+    margin-bottom: 0.5em ;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading{
+    visibility:hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after{
+    visibility:visible;
+    content:"loading...";
+    color: white;
+    position: absolute;
+    top:0;
+    left:20px;
 }
